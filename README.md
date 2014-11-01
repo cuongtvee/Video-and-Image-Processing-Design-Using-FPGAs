@@ -3,7 +3,7 @@
 Project Introduction 
 ===============================================================================================================
 Video and Image Processing Design Using FPGAs
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/watch?v=4aFJsiBWB9Q)
 
 --Last Page Update: 11/01/2014
 
