@@ -1,6 +1,6 @@
 Video-and-Image-Processing-Design-Using-FPGAs
-Last Page Update: 11/01/2014
-Contact: cuongtv.ee@gmail.com
+--Last Page Update: 11/01/2014
+--Contact: cuongtv.ee@gmail.com
 ===============================================================================================================
 ++ Project Introduction 
 ===============================================================================================================
