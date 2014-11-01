@@ -5,7 +5,7 @@ Video and Image Processing
 
 <p align="center">
 Have you found this software useful? Consider donating US$10 so it can get even better! <br />
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2AM852KBMM62J" hspace="0" vspace="0" border="0" /></a><br />
+<a href="http://sites.google.com/site/xuyenvietfoods" hspace="0" vspace="0" border="0" /></a><br />
 This software is completely free and will always stay free. Enjoy!
 </p>
 
