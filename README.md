@@ -1,4 +1,5 @@
-Video-and-Image-Processing-Design-Using-FPGAs
+Video and Image Processing Design Using FPGAs
+
 --Last Page Update: 11/01/2014
 
 ===============================================================================================================
