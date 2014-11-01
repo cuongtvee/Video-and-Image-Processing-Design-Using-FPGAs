@@ -119,9 +119,7 @@ assign	HEX0		=	7'h01;
 assign	HEX1		=	7'h01;
 assign	HEX2		=	7'h03;
 assign	HEX3		=	7'h00;
-//--------------------------------------
-// 					CAMERA LEFT 
-//---------------------------------------
+
 wire	SIO_C1;
 wire	SIO_D1;
 wire	SYNC1;
@@ -148,7 +146,7 @@ assign	CCD_DATA1[3] = GPIO_1[11];
 assign	CCD_DATA1[0] = GPIO_1[12];
 assign	CCD_DATA1[1] = GPIO_1[13];
 //---------------------------------------------
-// 					RESET DELAY
+// RESET DELAY
 //---------------------------------------------
 wire				DLY_RST_0;
 wire				DLY_RST_1;
@@ -202,8 +200,6 @@ wire  [10:0]	X_Cont1;
 wire  [9:0]  	Y_Cont1;
 wire  [31:0] 	Frame_Cont1;
 
-
-//FOR CAPTURE LEFT CAMERA
 CCD_Capture	CAMERA_DECODER
 	(
 		.oYCbCr(YCbCr1),
@@ -286,7 +282,7 @@ Sdram_Control_4Port	SDRAM_FRAME_BUFFER
 		.DQM			  	({DRAM_UDQM,DRAM_LDQM})
 	);
 //-------------------------------------------------
-//					YUV 4:2:2 TO YUV 4:4:4
+//	YUV 4:2:2 TO YUV 4:4:4
 //-------------------------------------------------
 wire	[7:0]	mY1;
 wire	[7:0]	mCb1;
@@ -296,7 +292,6 @@ wire	[7:0]	mY2;
 wire	[7:0]	mCb2;
 wire	[7:0]	mCr2;
 
-// LEFT CAMERA
 YUV422_to_444	YUV422to444
 	(
 	//	YUV 4:2:2 Input
