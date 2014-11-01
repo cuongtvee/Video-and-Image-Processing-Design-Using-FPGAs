@@ -43,7 +43,7 @@ OV7670 interface using DE1 Kit
 *Buffer
 
 *Display
-[![ScreenShot](https://www.youtube.com/watch?v=4aFJsiBWB9Q)](https://www.youtube.com/watch?v=4aFJsiBWB9Q)
+[![ScreenShot](https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/10382667_883562974989470_8064993547187934771_n.jpg?oh=0a4852de1deb65cfb561740aab26ced5&oe=54F8C0CD&__gda__=1424581371_1f7ed6b71fa04f2bfbce5098f4b2ca9e)](https://www.youtube.com/watch?v=4aFJsiBWB9Q)
 ===============================================================================================================
 OV7670 interface using DE2 Kit
 ===============================================================================================================
