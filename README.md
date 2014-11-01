@@ -42,14 +42,8 @@ OV7670 interface using DE1 Kit
 *Buffer
 
 *Display
-<br>
-</span></div>
-<h3 style="background-color:rgb(230,145,56)"><font color="#783f04">Camera ov7670 De2Kit</font></h3>
-<div><font color="#783f04">
-<div><br>
-</div>
-</font><img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BYouTube+video'%3D20'f%5Cv'a%5C%3D0'10'%3D639'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B%22YouTube+Video%22'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D640'%3D357'dim'%5C%3D10'%3D10'%3D640'%3D357'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=hrpG4z-2UTkho-MVipr6SJLJtmQ" data-origsrc="4aFJsiBWB9Q" data-type="youtube" data-props="align:center;borderTitle:YouTube Video;height:360;showBorder:true;showBorderTitle:true;width:640;wrap:false;" width="640" height="360" style="display:block;margin:5px auto;text-align:center;"></div>
-<div><br>
+<img src="https://www.google.com/chart?chc=sites&amp;cht=d&amp;chdp=sites&amp;chl=%5B%5BYouTube+video'%3D20'f%5Cv'a%5C%3D0'10'%3D419'0'dim'%5Cbox1'b%5CF6F6F6'fC%5CF6F6F6'eC%5C0'sk'%5C%5B'%5D'a%5CV%5C%3D12'f%5C%5DV%5Cta%5C%3D10'%3D0'%3D420'%3D312'dim'%5C%3D10'%3D10'%3D420'%3D312'vdim'%5Cbox1'b%5Cva%5CF6F6F6'fC%5CC8C8C8'eC%5C'a%5C%5Do%5CLauto'f%5C&amp;sig=uxJEBVNLga9ilAVqCz_ZIleCFzA" data-origsrc="4aFJsiBWB9Q" data-type="youtube" data-props="height:315;width:420;" width="420" height="315" style="display:block;text-align:left;margin-right:auto;">
+
  
 ===============================================================================================================
 OV7670 interface using DE2 Kit
