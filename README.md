@@ -5,6 +5,7 @@ Video and Image Processing Design Using FPGAs
 ===============================================================================================================
 Project Introduction 
 ===============================================================================================================
+<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" hspace="0" vspace="0" border="0" />
 
 <p align="center">
 Have you found this software useful? Please Donate! ^^ so it can get even better! <br />
