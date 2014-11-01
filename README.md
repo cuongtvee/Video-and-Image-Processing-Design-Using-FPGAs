@@ -15,6 +15,7 @@ This software is completely free and will always stay free. Enjoy!
 ===============================================================================================================
 OV7670 Camera Module
 ===============================================================================================================
+OV7670 image sensor, small size, low voltage, providing single-chip VGA camera and image processor for all function. By SCCB bus control, you can output the entire frame, sub-sampled, taking a variety of windows, etc. Resolution 8 bits affect the data.The product is VGA images up to 30 frames / sec. Users can fully control the image quality, data format and transmission. All image processing functions process includes gamma curves, white balance, saturation, color and so on through SCCBinterface programming. OmmiVision image sensor applications unique sensor technology, by reducing or eliminating optical or electronic defects such as fixed pattern noise, prop tail, blooming, etc., to improve image quality, get a clear and stable color image.
 <p align="center">
 Signal
 <img src="https://scontent-a-nrt.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10734188_883461848332916_4838891402771798971_n.jpg?oh=e20360080a72db793631652c94de01c8&oe=54EC1808" hspace="0" vspace="0" border="0" />
