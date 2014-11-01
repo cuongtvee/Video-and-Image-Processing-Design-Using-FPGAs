@@ -3,7 +3,7 @@
 Project Introduction 
 ===============================================================================================================
 Video and Image Processing Design Using FPGAs
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/watch?v=4aFJsiBWB9Q)
+
 
 --Last Page Update: 11/01/2014
 
@@ -43,8 +43,7 @@ OV7670 interface using DE1 Kit
 *Buffer
 
 *Display
-https://www.youtube.com/watch?v=4aFJsiBWB9Q
- 
+[![ScreenShot](https://www.youtube.com/watch?v=4aFJsiBWB9Q)](https://www.youtube.com/watch?v=4aFJsiBWB9Q)
 ===============================================================================================================
 OV7670 interface using DE2 Kit
 ===============================================================================================================
