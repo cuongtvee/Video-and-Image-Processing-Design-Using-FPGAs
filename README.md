@@ -5,7 +5,11 @@ Video-and-Image-Processing-Design-Using-FPGAs
 Project Introduction 
 ===============================================================================================================
 
-
+<p align="center">
+Have you found this software useful? Please Donate! ^^ so it can get even better! <br />
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2AM852KBMM62J"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" hspace="0" vspace="0" border="0" /></a><br />
+This software is completely free and will always stay free. Enjoy!
+</p>
 ===============================================================================================================
 Interfacing
 ===============================================================================================================
@@ -25,9 +29,5 @@ Image processing
 ---------------------------------------------------------------------------------------------------------------
 Contact: cuongtv.ee@gmail.com
 ---------------------------------------------------------------------------------------------------------------
-<p align="center">
-Have you found this software useful? Please Donate! ^^ so it can get even better! <br />
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2AM852KBMM62J"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" hspace="0" vspace="0" border="0" /></a><br />
-This software is completely free and will always stay free. Enjoy!
-</p>
+
 
