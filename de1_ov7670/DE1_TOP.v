@@ -1,11 +1,11 @@
-//==========================================================
+//===============================================================================
 // Copyright (c) 2014 by Cuong-TV
-//==========================================================
+//===============================================================================
 // Project  : Video and Image Processing Design Using FPGAs
 // File name: DE1_TOP.v 
 // Author   : cuongtv
 // Email	: cuongtv.ee@gmail.com - tvcuong@hcmut.edu.vn
-//==========================================================
+//===============================================================================
 // Description
 
 // Revision History :
@@ -203,8 +203,6 @@ wire  [31:0] 	Frame_Cont1;
 CCD_Capture	CAMERA_DECODER
 	(
 		.oYCbCr(YCbCr1),
-		.oDATA1(mCCD_DATA11),
-		.oDATA2(mCCD_DATA12),
 		.oDVAL(oDVAL1),
 		.oX_Cont(X_Cont1),
 		.oY_Cont(Y_Cont1),
@@ -234,23 +232,23 @@ Sdram_Control_4Port	SDRAM_FRAME_BUFFER
 	//	HOST Side						
 		.REF_CLK     	(CLOCK_50),
 		.RESET_N     	(	1'b1),
-		.CLK    	  		(sdram_ctrl_clk),
+		.CLK    	(sdram_ctrl_clk),
 	//	FIFO Write Side 1
-		.WR1_DATA	  (YCbCr1),//({mCCD_DATA11,mCCD_DATA12}),//(16'hFFFF),
-		.WR1     	  	(oDVAL1),
-		.WR1_ADDR	  	(0),
+		.WR1_DATA	(YCbCr1),
+		.WR1     	(oDVAL1),
+		.WR1_ADDR	(0),
 		.WR1_MAX_ADDR	(640*480),
 		.WR1_LENGTH  	(9'h100),
-		.WR1_LOAD	  	(!DLY_RST_0),
-		.WR1_CLK	  		(PCLK1),
+		.WR1_LOAD	(!DLY_RST_0),
+		.WR1_CLK	(PCLK1),
 	//	FIFO Write Side 2
-		.WR2_DATA	   (YCbCr2),
-		.WR2     	  	(oDVAL2),
-		.WR2_ADDR	  	(22'h100000),
+		.WR2_DATA	(YCbCr2), // for dual camera
+		.WR2     	(oDVAL2),
+		.WR2_ADDR	(22'h100000),
 		.WR2_MAX_ADDR	(22'h100000+640*480),
 		.WR2_LENGTH  	(9'h100),
-		.WR2_LOAD	  	(!DLY_RST_0),
-		.WR2_CLK	  		(PCLK2),
+		.WR2_LOAD	(!DLY_RST_0),
+		.WR2_CLK	 (PCLK2),
 		
  //	FIFO Read Side 1
 		.RD1_DATA	  	(READ_DATA1),
