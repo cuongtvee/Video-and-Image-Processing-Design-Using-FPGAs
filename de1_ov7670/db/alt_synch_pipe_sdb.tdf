@@ -1,0 +1,42 @@
+--dffpipe DELAY=2 WIDTH=11 clock clrn d q ALTERA_INTERNAL_OPTIONS=X_ON_VIOLATION_OPTION=OFF;suppress_da_rule_internal=r105
+--VERSION_BEGIN 9.0SP2 cbx_a_gray2bin 2008:05:19:09:32:04:SJ cbx_a_graycounter 2008:05:19:09:39:53:SJ cbx_altdpram 2009:05:19:16:53:07:SJ cbx_altsyncram 2009:05:19:16:53:16:SJ cbx_cycloneii 2008:05:19:10:57:37:SJ cbx_dcfifo 2009:05:20:11:02:04:SJ cbx_fifo_common 2008:05:19:10:54:06:SJ cbx_flex10ke 2008:05:19:10:53:03:SJ cbx_lpm_add_sub 2009:05:07:10:25:28:SJ cbx_lpm_compare 2009:02:03:01:43:16:SJ cbx_lpm_counter 2008:05:19:10:42:20:SJ cbx_lpm_decode 2008:05:19:10:39:27:SJ cbx_lpm_mux 2009:03:31:01:01:28:SJ cbx_mgl 2009:02:26:16:06:21:SJ cbx_scfifo 2009:05:20:16:28:16:SJ cbx_stratix 2008:09:18:16:08:35:SJ cbx_stratixii 2008:11:14:16:08:42:SJ cbx_stratixiii 2009:05:12:13:36:56:SJ cbx_util_mgl 2008:11:21:14:58:47:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2009 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION dffpipe_qe9 (clock, clrn, d[10..0])
+RETURNS ( q[10..0]);
+
+--synthesis_resources = reg 22 
+OPTIONS ALTERA_INTERNAL_OPTION = "X_ON_VIOLATION_OPTION=OFF;suppress_da_rule_internal=r105";
+
+SUBDESIGN alt_synch_pipe_sdb
+( 
+	clock	:	input;
+	clrn	:	input;
+	d[10..0]	:	input;
+	q[10..0]	:	output;
+) 
+VARIABLE 
+	dffpipe9 : dffpipe_qe9;
+
+BEGIN 
+	dffpipe9.clock = clock;
+	dffpipe9.clrn = clrn;
+	dffpipe9.d[] = d[];
+	q[] = dffpipe9.q[];
+END;
+--VALID FILE

@@ -1,0 +1,103 @@
+Restore Archived Project report for DE1_TOP
+Tue Nov 04 13:03:01 2014
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Tue Nov 04 13:03:01 2014 ;
+; Revision Name                   ; DE1_TOP                               ;
+; Top-level Entity Name           ; DE1_TOP                               ;
+; Family                          ; Cyclone II                            ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'D:/document/source_code/verilog/de1_ov7670/DE1_CAMERA/DE1_CAMERA_tmp_archive.qar' into the 'D:/document/source_code/verilog/de1_ov7670/DE1_CAMERA_new' directory
+Info: Generated report 'DE1_TOP.restore.rpt'
+
+
++-----------------------------------------------+
+; Files Restored                                ;
++-----------------------------------------------+
+; File Name                                     ;
++-----------------------------------------------+
+; DE1_CAMERA.qpf                                ;
+; DE1_TOP.qsf                                   ;
+; DE1_TOP.v                                     ;
+; DE1_TOP_assignment_defaults.qdf               ;
+; Dis_Cal.v                                     ;
+; SRC/Circle_Detect.v                           ;
+; SRC/Color_Detect.v                            ;
+; SRC/Data_Display.v                            ;
+; SRC/Dilate.v                                  ;
+; SRC/Erode.v                                   ;
+; SRC/I2C/CCD_Capture.v                         ;
+; SRC/I2C/I2C_CCD_Config.v                      ;
+; SRC/I2C/I2C_Controller.v                      ;
+; SRC/Line_Buffer.v                             ;
+; SRC/MAC_3.v                                   ;
+; SRC/RGB2HSV.v                                 ;
+; SRC/Reset_Delay.v                             ;
+; SRC/Sdram_Control_4Port/Sdram_Control_4Port.v ;
+; SRC/Sdram_Control_4Port/Sdram_FIFO.v          ;
+; SRC/Sdram_Control_4Port/Sdram_Params.h        ;
+; SRC/Sdram_Control_4Port/command.v             ;
+; SRC/Sdram_Control_4Port/control_interface.v   ;
+; SRC/Sdram_Control_4Port/sdr_data_path.v       ;
+; SRC/Sobel_Filter.v                            ;
+; SRC/VGA_Controller.v                          ;
+; SRC/VGA_Param.h                               ;
+; SRC/YCbCr2RGB.v                               ;
+; SRC/YUV422_to_444.v                           ;
+; SRC/cos.v                                     ;
+; SRC/delay.v                                   ;
+; SRC/delay_5.v                                 ;
+; SRC/processing.v                              ;
+; SRC/sdram_pll.v                               ;
+; SRC/sin.v                                     ;
+; SRC/sqrt.v                                    ;
+; Tim_TT.v                                      ;
++-----------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

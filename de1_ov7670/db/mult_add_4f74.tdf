@@ -1,0 +1,84 @@
+--altmult_add ADDNSUB_MULTIPLIER_ACLR1="ACLR0" ADDNSUB_MULTIPLIER_PIPELINE_ACLR1="ACLR0" ADDNSUB_MULTIPLIER_PIPELINE_REGISTER1="CLOCK0" ADDNSUB_MULTIPLIER_REGISTER1="CLOCK0" CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEDICATED_MULTIPLIER_CIRCUITRY="AUTO" DEVICE_FAMILY="Cyclone II" DSP_BLOCK_BALANCING="Auto" INPUT_ACLR_A0="ACLR0" INPUT_ACLR_A1="ACLR0" INPUT_ACLR_A2="ACLR0" INPUT_ACLR_B0="ACLR0" INPUT_ACLR_B1="ACLR0" INPUT_ACLR_B2="ACLR0" INPUT_REGISTER_A0="CLOCK0" INPUT_REGISTER_A1="CLOCK0" INPUT_REGISTER_A2="CLOCK0" INPUT_REGISTER_B0="CLOCK0" INPUT_REGISTER_B1="CLOCK0" INPUT_REGISTER_B2="CLOCK0" INPUT_SOURCE_A0="DATAA" INPUT_SOURCE_A1="DATAA" INPUT_SOURCE_A2="DATAA" INPUT_SOURCE_B0="DATAB" INPUT_SOURCE_B1="DATAB" INPUT_SOURCE_B2="DATAB" MULTIPLIER1_DIRECTION="ADD" MULTIPLIER_ACLR0="ACLR0" MULTIPLIER_ACLR1="ACLR0" MULTIPLIER_ACLR2="ACLR0" MULTIPLIER_REGISTER0="CLOCK0" MULTIPLIER_REGISTER1="CLOCK0" MULTIPLIER_REGISTER2="CLOCK0" NUMBER_OF_MULTIPLIERS=3 OUTPUT_ACLR="ACLR0" OUTPUT_REGISTER="CLOCK0" port_addnsub1="PORT_UNUSED" port_signa="PORT_UNUSED" port_signb="PORT_UNUSED" REPRESENTATION_A="UNSIGNED" REPRESENTATION_B="SIGNED" SIGNED_ACLR_A="ACLR0" SIGNED_ACLR_B="ACLR0" SIGNED_PIPELINE_ACLR_A="ACLR0" SIGNED_PIPELINE_ACLR_B="ACLR0" SIGNED_PIPELINE_REGISTER_A="CLOCK0" SIGNED_PIPELINE_REGISTER_B="CLOCK0" SIGNED_REGISTER_A="CLOCK0" SIGNED_REGISTER_B="CLOCK0" WIDTH_A=8 WIDTH_B=17 WIDTH_RESULT=27 aclr0 clock0 dataa datab result CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48
+--VERSION_BEGIN 9.0SP2 cbx_alt_ded_mult_y 2008:05:19:10:01:35:SJ cbx_altmult_add 2009:04:07:18:02:29:SJ cbx_cycloneii 2008:05:19:10:57:37:SJ cbx_lpm_add_sub 2009:05:07:10:25:28:SJ cbx_lpm_mult 2008:09:30:18:36:56:SJ cbx_mgl 2009:02:26:16:06:21:SJ cbx_padd 2008:09:04:11:11:31:SJ cbx_parallel_add 2008:05:19:10:26:21:SJ cbx_stratix 2008:09:18:16:08:35:SJ cbx_stratixii 2008:11:14:16:08:42:SJ cbx_util_mgl 2008:11:21:14:58:47:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2009 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION ded_mult_ob91 (aclr[3..0], clock[3..0], dataa[7..0], datab[16..0], ena[3..0])
+RETURNS ( result[24..0]);
+FUNCTION soft (in)
+RETURNS ( out);
+
+--synthesis_resources = dsp_9bit 6 lut 53 reg 27 
+SUBDESIGN mult_add_4f74
+( 
+	aclr0	:	input;
+	clock0	:	input;
+	dataa[23..0]	:	input;
+	datab[50..0]	:	input;
+	result[26..0]	:	output;
+) 
+VARIABLE
+	add4_result[25..0]	:	WIRE;
+	add6_result[26..0]	:	WIRE;
+	ded_mult1 : ded_mult_ob91;
+	ded_mult2 : ded_mult_ob91;
+	ded_mult3 : ded_mult_ob91;
+	dffe8a[26..0] : dffe;
+	sft5a[25..0] : soft;
+	sft7a[26..0] : soft;
+	dataa_bus[23..0]	: WIRE;
+	datab_bus[50..0]	: WIRE;
+	ena0	: NODE;
+	w_input187w[25..0]	: WIRE;
+	w_input193w[25..0]	: WIRE;
+	w_input198w[26..0]	: WIRE;
+	w_input204w[26..0]	: WIRE;
+
+BEGIN 
+	add4_result[] = w_input187w[] + w_input193w[];
+	add6_result[] = w_input198w[] + w_input204w[];
+	ded_mult1.aclr[] = ( B"000", aclr0);
+	ded_mult1.clock[] = ( B"111", clock0);
+	ded_mult1.dataa[] = ( dataa_bus[7..0]);
+	ded_mult1.datab[] = ( datab_bus[16..0]);
+	ded_mult1.ena[] = ( B"111", ena0);
+	ded_mult2.aclr[] = ( B"000", aclr0);
+	ded_mult2.clock[] = ( B"111", clock0);
+	ded_mult2.dataa[] = ( dataa_bus[15..8]);
+	ded_mult2.datab[] = ( datab_bus[33..17]);
+	ded_mult2.ena[] = ( B"111", ena0);
+	ded_mult3.aclr[] = ( B"000", aclr0);
+	ded_mult3.clock[] = ( B"111", clock0);
+	ded_mult3.dataa[] = ( dataa_bus[23..16]);
+	ded_mult3.datab[] = ( datab_bus[50..34]);
+	ded_mult3.ena[] = ( B"111", ena0);
+	dffe8a[].clk = clock0;
+	dffe8a[].clrn = (! aclr0);
+	dffe8a[].d = sft7a[].out;
+	dffe8a[].ena = ena0;
+	sft5a[].in = add4_result[];
+	sft7a[].in = add6_result[];
+	dataa_bus[] = ( dataa[23..0]);
+	datab_bus[] = ( datab[50..0]);
+	ena0 = VCC;
+	result[26..0] = dffe8a[26..0].q;
+	w_input187w[] = ( ded_mult1.result[24..24], ded_mult1.result[24..0]);
+	w_input193w[] = ( ded_mult2.result[24..24], ded_mult2.result[24..0]);
+	w_input198w[] = ( add4_result[25..25], add4_result[]);
+	w_input204w[] = ( ded_mult3.result[24..24], ded_mult3.result[24..24], ded_mult3.result[24..0]);
+END;
+--VALID FILE

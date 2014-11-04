@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DE1_TOP">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|Sdram_Control_4Port:SDRAM_FRAME_BUFFER|Sdram_FIFO:read_fifo2|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_l6o1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|Sdram_Control_4Port:SDRAM_FRAME_BUFFER|Sdram_FIFO:write_fifo1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_l6o1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|YCbCr2RGB:YUV2RGB|MAC_3:u1|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_4f74.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|Sdram_Control_4Port:SDRAM_FRAME_BUFFER|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_l6o1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|Sdram_Control_4Port:SDRAM_FRAME_BUFFER|Sdram_FIFO:write_fifo2|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_l6o1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|YCbCr2RGB:YUV2RGB|MAC_3:u0|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_4f74.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE1_TOP|YCbCr2RGB:YUV2RGB|MAC_3:u2|altmult_add:ALTMULT_ADD_component" CBX_FILE_NAME="mult_add_4f74.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

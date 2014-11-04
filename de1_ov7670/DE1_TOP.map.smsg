@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at Sobel_Filter.v(123): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at RGB2HSV.v(53): always construct contains both blocking and non-blocking assignments
