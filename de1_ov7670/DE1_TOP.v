@@ -162,17 +162,22 @@ Reset_Delay u2
 //--------------------------------
 // CONFIG I2C
 //--------------------------------
+always@(posedge OSC_50)	clk_25	<=	~clk_25;
+reg clk_25;
+assign CLK_25 = clk_25;
 
-I2C_CCD_Config I2C_Config
-	(
-	//	Host Side
-		.iCLK(CLOCK_50),
-		.iRST_N(DLY_RST_2),
-	//iExposure,
-	//	I2C Side
-		.I2C_SCLK(SIO_C1),
-		.I2C_SDAT(SIO_D1)	
-	);
+I2C_AV_Config CCD_CF
+(
+	//Global clock
+	.iCLK(CLK_25),		//25MHz
+	.iRST_N(DLY_RST_2),		//Global Reset
+	
+	//I2C Side
+	.I2C_SCLK(SIO_C1),
+	.I2C_SDAT(SIO_D1),	
+	.Config_Done(config_done2),//Config Done
+	.I2C_RDATA(I2C_RDATA2)	//I2C Read Data
+);
 
 //------------------------------------
 // DATA ACQUISITION
@@ -199,7 +204,6 @@ wire	[7:0]	mCCD_DATA12;
 wire  [10:0]	X_Cont1;
 wire  [9:0]  	Y_Cont1;
 wire  [31:0] 	Frame_Cont1;
-
 CCD_Capture	CAMERA_DECODER
 	(
 		.oYCbCr(YCbCr1),
